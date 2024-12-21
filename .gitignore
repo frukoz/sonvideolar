@@ -1,38 +1,26 @@
 # API Keys
-config.js
-config.local.js
-.env
-
+config.jsconfig.local.js
+env
 # Keep production files
-!config.prod.js
-!netlify.toml
-
+config.prod.js
+netlify.toml
 # IDE files
-.vscode/
-.idea/
-
+vscode/
+idea/
 # Dependencies
-node_modules/
-
+ode_modules/
 # Logs
-*.log
-
+.log
 # Cache
-.cache/
-
+cache/
 # Build files
-dist/
-build/
-
+ist/
+uild/
 # OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Environment Variables
-.env
-.env.local
+DS_Store
+DS_Store?
+_*
+Spotlight-V100
+Trashes
+hthumbs.db
+humbs.db
