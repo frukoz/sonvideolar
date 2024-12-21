@@ -1,9 +1,14 @@
 # API Keys
-config.jsconfig.local.js
-env
+config.js
+config.local.js
+.env
+env.prod.js
+
 # Keep production files
-config.prod.js
-netlify.toml
+!config.prod.js
+!netlify.toml
+!env.js
+
 # IDE files
 vscode/
 idea/

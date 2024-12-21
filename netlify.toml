@@ -1,3 +1,6 @@
 [build]
-  command = "cp config.prod.js config.js"
+  command = """
+    sed 's|{{ VITE_YOUTUBE_API_KEY }}|'\"$VITE_YOUTUBE_API_KEY\"'|g' env.js > env.prod.js
+    cp config.prod.js config.js
+  """
   publish = "." 

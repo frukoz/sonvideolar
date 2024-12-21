@@ -1,0 +1,3 @@
+window.ENV = {
+    VITE_YOUTUBE_API_KEY: '{{ VITE_YOUTUBE_API_KEY }}'
+}; 
