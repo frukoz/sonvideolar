@@ -27,3 +27,6 @@ build/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Environment Variables
+.env.local
