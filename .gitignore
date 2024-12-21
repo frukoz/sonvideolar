@@ -1,6 +1,11 @@
 # API Keys
 config.js
+config.local.js
 .env
+
+# Keep production files
+!config.prod.js
+!netlify.toml
 
 # IDE files
 .vscode/
@@ -29,4 +34,5 @@ ehthumbs.db
 Thumbs.db
 
 # Environment Variables
+.env
 .env.local

@@ -1,0 +1,3 @@
+[build]
+  command = "cp config.prod.js config.js"
+  publish = "." 
