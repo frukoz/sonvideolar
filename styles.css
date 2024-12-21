@@ -195,3 +195,101 @@ body {
     font-size: 0.9rem;
     margin-bottom: 0.3rem;
 } 
+
+.suggestion-container {
+    margin-left: 1rem;
+}
+
+.suggest-button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.suggest-button:hover {
+    background: #cc0000;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: var(--card-bg);
+    margin: 15% auto;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 500px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-secondary);
+}
+
+.close:hover {
+    color: var(--primary);
+}
+
+.modal h2 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.modal p {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+#channel-suggestion {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--bg-dark);
+    color: var(--text-primary);
+}
+
+#submit-suggestion {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#suggestion-message {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+}
+
+#suggestion-message.error {
+    background: rgba(255, 0, 0, 0.1);
+    color: #ff4444;
+}
+
+#suggestion-message.success {
+    background: rgba(0, 255, 0, 0.1);
+    color: #44ff44;
+} 
