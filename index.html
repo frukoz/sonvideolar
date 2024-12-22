@@ -3,27 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Kanal Videoları</title>
+    <title>Son Videolar</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
-        <div class="controls">
+        <div class="header-content">
+            <a href="/" class="logo-link">
+                <img src="sonvideolar.png" alt="Son Videolar" class="site-logo">
+            </a>
             <div class="search-bar">
                 <input type="text" id="search-input" placeholder="Videoları ara...">
             </div>
-            <!-- Suggestion button will be added here by JavaScript -->
+            <button id="suggest-channel" class="suggest-button">Kanal Öner +</button>
         </div>
     </header>
 
     <main>
         <div id="video-grid" class="video-grid">
-            <!-- Videolar buraya eklenecek -->
+            <!-- Videos will be inserted here -->
         </div>
     </main>
 
-    <script src="env.prod.js"></script>
+    <!-- Modal -->
+    <div id="suggestion-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Kanal Öner</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Eklemek istediğiniz kanalın adını veya linkini yazın:</p>
+                <input type="text" id="channel-suggestion" placeholder="Kanal adı veya linki">
+                <button id="submit-suggestion">Gönder</button>
+                <p id="suggestion-message"></p>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js" type="module"></script>
 </body>
 </html>
