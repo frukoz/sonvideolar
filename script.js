@@ -343,7 +343,7 @@ async function displayVideos(videos) {
         const duration = parseDuration(details.contentDetails.duration);
         const totalSeconds = (duration.hours * 3600) + (duration.minutes * 60) + duration.seconds;
 
-        if (totalSeconds < 121) return null;
+        if (totalSeconds < 12) return null;
 
         // Calculate time ago and view count as before
         const publishedDate = new Date(video.snippet.publishedAt);
